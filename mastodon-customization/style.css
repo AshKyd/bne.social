@@ -1,4 +1,4 @@
-body {
+body:not([class=app-body]) {
     background: #2160b2;
     background: bottom center url("bne.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
     background-size: 100%;
