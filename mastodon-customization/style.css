@@ -19,7 +19,29 @@ body:not([class=app-body]) {
 }
 
 .footer {
-    background: rgba(0, 0, 0, .6);
-    margin: 10px auto;
-    max-width: 700px;
+    display:none;
+}
+
+/* logo background */
+.logo-container a{
+    display:inline-block;
+    background:rgba(0, 0, 0, .8);
+    border-radius:100%;
+    padding:10px;
+    margin-bottom:20px;
+}
+.logo-container a img{
+    margin:0;
+}
+
+/* more link on profile pages */
+.pagination{
+    background-color: #2588d0;
+    border-radius: 0 0 4px 4px;
+    margin-top: -2px;
+    padding:10px;
+}
+
+span.previous_page.disabled{
+    display:none;
 }
