@@ -1,0 +1,25 @@
+body {
+    background: #2160b2;
+    background: bottom center url("bne.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.about-body .wrapper {
+    background: rgba(0, 0, 0, .8);
+    padding: 25px 50px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, .8);
+    border-radius: 4px;
+}
+
+.footer {
+    background: rgba(0, 0, 0, .6);
+    margin: 10px auto;
+    max-width: 700px;
+}
