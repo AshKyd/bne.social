@@ -22,7 +22,7 @@
 }
 
 body:not([class=app-body]):not([class=admin]) {
-    background: #2160b2;
+    background-color: #2160b2;
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
