@@ -1,10 +1,34 @@
 body:not([class=app-body]):not([class=admin]) {
     background: #2160b2;
-    background: bottom center url("bne.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+@media (min-width: 1024px){
+  @media (min-width: 1921px){
+    body:not([class=app-body]):not([class=admin]) {
+      background: bottom center url("bne.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    }
+  }
+  @media (max-width: 1920px){
+    body:not([class=app-body]):not([class=admin]) {
+      background: bottom center url("bne-1920.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    }
+  }
+  @media (max-width: 1600px){
+    body:not([class=app-body]):not([class=admin]) {
+      background: bottom center url("bne-1600.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    }
+  }
+  @media (max-width: 1280px){
+    body:not([class=app-body]):not([class=admin]) {
+      background: bottom center url("bne-1280.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    }
+  }
+}
+
+
 
 .about-body .wrapper {
     background: rgba(0, 0, 0, .8);
