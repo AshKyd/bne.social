@@ -8,7 +8,7 @@
   .heading h1 small{color:#1f232b;font-size:14px;}
 }
 /* Desktop gets a 1080p image */
-@media ((min-width: 676px) and (max-width: 1920px)){
+@media (min-width: 676px) and (max-width: 1920px){
   .landing-page .header-wrapper {
     background:no-repeat center url('header-1920.jpg'),
       linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
@@ -16,7 +16,7 @@
 }
 
 /* large desktops get a large image */
-@media ((min-width: 1921px) or ((min-resolution: 192dpi) and (min-width: 960px))){
+@media (min-width: 1921px), (min-resolution: 192dpi) and (min-width: 960px){
   .landing-page .header-wrapper {
     background:no-repeat center url('header-2880.jpg'),
       linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
