@@ -1,72 +1,31 @@
-body:not([class=app-body]):not([class=admin]) {
-  background:linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+/* Mobile gets a square image */
+@media (max-width: 675px){
+  .landing-page .header-wrapper {
+    background:no-repeat center 100px url('header-mobile.jpg'),
+      linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+  background-size:100%;
+  }
+  .heading h1 small{color:#1f232b;font-size:14px;}
 }
-@media (min-width: 1024px){
-  @media (min-width: 1921px){
-    body:not([class=app-body]):not([class=admin]) {
-      background: bottom center url("bne.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
-    }
-  }
-  @media (max-width: 1920px){
-    body:not([class=app-body]):not([class=admin]) {
-      background: bottom center url("bne-1920.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
-    }
-  }
-  @media (max-width: 1600px){
-    body:not([class=app-body]):not([class=admin]) {
-      background: bottom center url("bne-1600.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
-    }
-  }
-  @media (max-width: 1280px){
-    body:not([class=app-body]):not([class=admin]) {
-      background: bottom center url("bne-1280.png"), linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
-    }
+/* Desktop gets a 1080p image */
+@media (min-width: 676px and max-width: 1920px){
+  .landing-page .header-wrapper {
+    background:no-repeat center url('header-1920.jpg'),
+      linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
   }
 }
 
-body:not([class=app-body]):not([class=admin]) {
-    background-color: #2160b2;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+/* large desktops get a large image */
+@media (min-width: 1921px or (min-resolution: 192dpi and min-width: 960px)){
+  .landing-page .header-wrapper {
+    background:no-repeat center url('header-2880.jpg'),
+      linear-gradient(to bottom, #2160b2 0%, #68a4fe 52%, #c8e4fe 70%);
+    background-size:cover;
+  }
 }
 
-.about-body .wrapper {
-    background: rgba(0, 0, 0, .8);
-    padding: 25px 50px;
-    margin-top: 50px;
-    border-radius: 4px;
-}
-
-.form-container {
-    background: rgba(0, 0, 0, .8);
-    border-radius: 4px;
-}
-
-.footer {
-    display:none;
-}
-
-/* logo background */
-.logo-container a{
-    display:inline-block;
-    background:rgba(0, 0, 0, .8);
-    border-radius:100%;
-    padding:10px;
-    margin-bottom:20px;
-}
-.logo-container a img{
-    margin:0;
-}
-
-/* more link on profile pages */
-.pagination{
-    background-color: #2588d0;
-    border-radius: 0 0 4px 4px;
-    margin-top: -2px;
-    padding:10px;
-}
-
-span.previous_page.disabled{
-    display:none;
-}
+/* tweak the header to fit */
+.float-1, .float-2, .float-3{display:none;}
+.container.links,.heading h1{background:#1f232b;border-radius:4px;}
+.container.links{padding:0 20px;margin-bottom:100px;}
+.heading h1{padding:10px 20px;background:rgba(255,255,255,0.7);color:#1f232b;}
